@@ -1,5 +1,4 @@
-"""proyectointegrador1 URL Configuration
-
+"""PI1taller1 URL Configuration
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.0/topics/http/urls/
 Examples:
@@ -20,9 +19,10 @@ from rest_framework import routers
 from hygrometer import views
 
 router = routers.DefaultRouter()
-router.register(r'hygrometer', views.HygrometerViewSet)
+router.register(r'luminosity', views.LuminosityViewSet)
+router.register(r'participante', views.ParticipanteViewSet)
 
 urlpatterns = [
-     url(r'^', include(router.urls)),
+    url(r'^', include(router.urls)),
     path('admin/', admin.site.urls),
 ]

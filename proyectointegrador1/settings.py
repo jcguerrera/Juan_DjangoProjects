@@ -80,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'pi-1-eafit-db',
         'USER': 'root',
-        'PASSWORD': 'notelavoyadecir',
+        'PASSWORD': 'dvnKVJ17',
         'HOST' : 'localhost',
         'PORT' : '3306'
 

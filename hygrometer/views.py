@@ -1,8 +1,13 @@
-from django.shortcuts import render
 from rest_framework import viewsets
-from .models import Hygrometer
-from .serializers import HygrometerSerializer
+from .models import Luminosity
+from .models import Participante
+from .serializers import LuminositySerializer
+from .serializers import ParticipanteSerializer
 
-class HygrometerViewSet(viewsets.ModelViewSet):
-    queryset = Hygrometer.objects.all().order_by('-created')
-    serializer_class = HygrometerSerializer
+class LuminosityViewSet(viewsets.ModelViewSet):
+    queryset = Luminosity.objects.all().order_by('-created')
+    serializer_class = LuminositySerializer
+
+class ParticipanteViewSet(viewsets.ModelViewSet):
+    queryset = Participante.objects.all().order_by('-created')
+    serializer_class = ParticipanteSerializer

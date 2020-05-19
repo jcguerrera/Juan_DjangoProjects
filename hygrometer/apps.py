@@ -1,5 +1,8 @@
 from django.apps import AppConfig
 
 
-class HygrometerConfig(AppConfig):
-    name = 'hygrometer'
+class LuminosityConfig(AppConfig):
+    name = 'luminosity'
+
+class ParticipacionConfig(AppConfig):
+    name = 'participacion'
