@@ -25,7 +25,10 @@ SECRET_KEY = '!d4%485+4klkm!p%c61oc%ss@8kk3(r20y74ayub7rn6b+@9fo'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['django==3.0.3',
+                'djangorestframework==3.11.0',
+                'mysqlclient==1.4.6'
+                 ]
 
 
 # Application definition
